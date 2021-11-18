@@ -86,7 +86,7 @@ endif()
 add_library(backward ${libtype} backward.cpp)
 target_compile_definitions(backward PUBLIC ${BACKWARD_DEFINITIONS})
 target_include_directories(backward PUBLIC ${BACKWARD_INCLUDE_DIRS})
-
+add_library(Backward::backward ALIAS backward)
 ###############################################################################
 # TESTS
 ###############################################################################
